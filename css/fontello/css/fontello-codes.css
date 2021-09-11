@@ -12,8 +12,12 @@
 .icon-right-open-big:before { content: '\e80a'; } /* '' */
 .icon-left-open-big:before { content: '\e80b'; } /* '' */
 .icon-play:before { content: '\e80c'; } /* '' */
+.icon-right-open-mini:before { content: '\e80d'; } /* '' */
+.icon-th:before { content: '\e80e'; } /* '' */
 .icon-facebook-circled:before { content: '\f051'; } /* '' */
+.icon-thumbs-up-alt:before { content: '\f164'; } /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */
+.icon-youtube-play:before { content: '\f16a'; } /* '' */
 .icon-instagram-1:before { content: '\f16d'; } /* '' */
 .icon-map:before { content: '\f279'; } /* '' */
 .icon-shopping-bag:before { content: '\f290'; } /* '' */

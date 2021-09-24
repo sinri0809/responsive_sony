@@ -137,6 +137,12 @@
       "css": "th",
       "code": 59406,
       "src": "typicons"
+    },
+    {
+      "uid": "80cd1022bd9ea151d554bec1fa05f2de",
+      "css": "up-dir",
+      "code": 59407,
+      "src": "fontawesome"
     }
   ]
 }

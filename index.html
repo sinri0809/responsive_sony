@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
   <link rel="shortcut icon" href="images/favicon.ico">
-
   <title>SONY korea</title>
 
   <!-- vendor prefix -->
@@ -32,18 +30,81 @@
 
 <body>
   <!-- <div class="modal"></div> -->
-  <!-- <span class="__go-top"></span> -->
 
   <div id="home" class="wrap">
+    <!-- gnb__sub__site-map---sony site -->
+    <section class="sony-site">
+      <div class="__container">
+
+        <div class="sony-site-tit">
+          <button class="bt-cancel">
+            <span>닫기</span>
+            <i class="icon-cancel"></i>
+          </button>
+          <h5>소니 사이트</h5>
+        </div>
+
+        <div class="sony-site-cont">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/sony_site_01.webp" alt="img1">
+                <span>Sony Group Site</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/sony_site_02.webp" alt="img2">
+                <span>소니 디자인</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/sony_site_04.webp" alt="img4">
+                <span>소니 컴퓨터 엔터테인먼트 코리아</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/sony_site_03.webp" alt="img3">
+                <span>소니 알파</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sony-site-artc">
+          <ul>
+            <li>
+              <a href="#">소니 방송/업무용 솔루션</a>
+              <p>오디오 및 비디오 업계를 위한 세계 최고의 장비.</p>
+            </li>
+            <li>
+              <a href="#">소니 픽쳐스</a>
+              <p>좋아하는 영화와 TV 쇼를 위한 허브.</p>
+            </li>
+            <li>
+              <a href="#">소니 방송/업무용 솔루션 고객지원</a>
+            </li>
+            <li>
+              <a href="#">소니 ATV 뮤직 퍼블리싱</a>
+            </li>
+            <li>
+              <a href="#">환경경영</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- header -->
     <header class="header">
       <div class="__container">
-        <a href="#home" class="header__logo">
+        <a href="#" class="header__logo">
           <?xml version="1.0" encoding="iso-8859-1"?>
           <svg class="--logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 100 841.89 300.275"
             style="enable-background:new 0 0 841.89 595.275;" xml:space="preserve">
-
             <path style="fill:#fff;" d="M589.959,230.239v9.011h4.611l0,0c2.2,0,2.638,0.5,2.7,1.25c0.043,0.517-2.297,3.132-3.188,4.167
             l-3.541,4.25l-4.75,5.458l-2.667,3.167c-1.896,2.375-1.854,1.25-4.292-1.458l-2.374-2.833l-5.668-6.896
             c-0.712-0.862-4.896-5.172-4.896-6.209c0-1.207,0.737-0.875,3.94-0.875l0,0h3.203v-9.032h-45.023v8.886l0,0
@@ -67,31 +128,43 @@
             c13.983-0.382,28.219,12,27.594,27.396C388.487,279.114,378.238,290,361.25,290L359.375,290.125z" />
           </svg>
         </a>
-
-        <nav class="header__nav">
+        <nav class="header-nav">
           <!-- nav-gnb-main-depth1 -->
-          <ul class="nav__gnb-main">
+          <ul class="gnb-main">
             <li><a href="#">스토어</a></li>
             <li>
               <a id="depth2" href="#">
-                전자제품
-                <i class="--i-down icon-down-open-mini"></i>
+                <span>전자제품</span>
+                
+                <i class="icon-down-open-mini"></i>
               </a>
             </li>
             <li><a href="#">PlayStation®</a></li>
             <li><a href="#">제품지원</a></li>
           </ul>
 
-          <ul class="nav__gnb-sub">
-            <li><a class="gnb-sub__liked icon-heart" href="#"></a></li>
+          <ul class="gnb__sub">
+            <li><a class="gnb__sub-liked icon-heart" href="#"></a></li>
             <li>
-              <button class="gnb-sub__search">
+              <button class="gnb__sub-search">
                 <span class="-txt">소니 검색</span>
                 <i class="icon-search"></i>
               </button>
+              
+              <div class="search-wrap" open-state='hide'>
+                <div class="search-wrap-a">
+                  <i class="icon-up-dir"></i>
+                </div>
+                <form action="" method="GET" id="search-form">
+                  <label for="search-txt">소니 검색</label>
+                  <input placeholder="검색" type="text" name="" id="search-txt">
+                  <input class="form-cancel" type="reset" value="✖">
+                </form>
+              </div>
             </li>
+
             <li>
-              <button class="gnb-sub__site-map">
+              <button class="gnb__sub-site-map">
                 <span class="-txt">소니 사이트</span>
                 <i class="icon-map"></i>
               </button>
@@ -101,7 +174,7 @@
       </div>
 
       <!-- gnb-depth2 -->
-      <div class="nav__gnb-main-depth2">
+      <div class="gnb-main-depth2">
         <div class="__container">
           <!-- depth2-menu -->
           <div class="depth2-menus">
@@ -154,20 +227,17 @@
             </ul>
             
           </div>
-
           <!-- depth2-buttons -->
           <div class="depth2-buttons">
             <button>
               <i class="icon-th"></i>
               <span>전체 전자제품</span>
             </button>
-
             <button>
               <span>전문가용 제품 및 솔루션 보기</span>
             </button>
           </div>
         </div>
-
         <!-- depth2-more -->
         <div class="depth2-more">
           <div class="__container">
@@ -186,7 +256,6 @@
                 <p>노이즈 캔슬링으로 몰입하다</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -474,14 +543,12 @@
       <!-- footer-sites -->
       <section class="footer__sites">
         <div class="__container">
-
           <div class="footer__sites-cont">
             <em>매장 찾기</em>
             <ul class="sites__depth1">
               <li><a href="#">직영점 안내</a></li>
             </ul>
           </div>
-
           <div class="footer__sites-cont">
             <em>고객지원</em>
             <ul class="sites__depth1">
@@ -491,7 +558,6 @@
               <li><a href="#">매장찾기</a></li>
             </ul>
           </div>
-
           <div class="footer__sites-cont">
             <em>제품정보</em>
             <ul class="sites__depth1">
@@ -500,7 +566,6 @@
               <li><a href="#">전자부품</a></li>
             </ul>
           </div>
-
           <div class="footer__sites-cont">
             <em>뉴스 및 정보</em>
             <ul class="sites__depth1">
@@ -574,10 +639,8 @@
       <!-- footer-address -->
       <address class="footer__addr">
         <div class="__container">
-
           <div class="addr__import">
             <span class="copyright">Copyright © 2021. Sony Korea Corporation. All rights reserved.</span>
-
             <ul class="import-links">
               <li><a href="#">이용약관</a></li>
               <li><a href="#"> <strong>개인정보취급방침</strong></a></li>
@@ -585,43 +648,33 @@
               <li><a href="#">SSL보안인증</a></li>
             </ul>
           </div>
-
           <dl class="addr__inf">
             <dt>사업장주소 :</dt>
             <dd>서울특별시 영등포구 국제금융로 10 원아이에프씨 24F </dd>
-
             <dt>사업자등록번호 :</dt>
             <dd>106-81-23810 </dd>
-
             <dt>통신판매번호</dt>
             <dd>2012-서울영등포-1038 소니코리아 (주)</dd>
-
             <dt>대표이사 :</dt>
             <dd>Okura Kikuo</dd>
             <dt> | </dt>
             <dt>개인정보관리책임자 :</dt>
             <dd>Okura Kikuo</dd>
-
             <dt></dt>
             <dd>
               본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, <br>
               상업적 목적의 무단전재, 복사, 배포 등을 금합니다.
             </dd>
-
             <dt>TEL :</dt>
             <dd>소니코리아 고객지원센터 1588-0911</dd>
-
             <dt> E-MAIL : </dt>
             <dd>
               <a class="addr--email" href="mailto:cshelp@sony.co.kr">cshelp@sony.co.kr</a>
             </dd>
-
           </dl>
-
         </div>
       </address>
     </footer>
-
   </div>
 </body>
 

@@ -1,5 +1,20 @@
 'use strict';
 window.onload = function () {
+  // button go top setting
+  $(window).scroll(function () {
+    var scY = $(window).scrollTop();
+    if (scY >= 500) {
+      $('.button-go-top').addClass('--active');
+    } else {
+      $('.button-go-top').removeClass('--active');
+    }
+    if (scY >= 1700) {
+      $('.button-go-top-wrapper').addClass('--stop');
+    } else {
+      $('.button-go-top-wrapper').removeClass('--stop');
+    }
+  });
+
   // electric product slide
   let menu = $('#depth2');
   let depth2 = $('.gnb-main-depth2');
@@ -10,6 +25,7 @@ window.onload = function () {
   }
 
   menu.mouseenter(function () {
+    clearTimeout(depth2_timer);
     depth2.stop().slideDown();
   });
   menu.mouseleave(function () {
@@ -38,10 +54,10 @@ window.onload = function () {
 
   // sony site toggle
   let sony_site = $('.sony-site');
-  let sony_site_bt = $('.gnb-sub__site-map');
+  let sony_site_bt = $('.gnb-sub-site-map');
   sony_site_bt.click(function () {
     sony_site.slideToggle();
-    $(this).toggleClass('gnb-sub__button-focused');
+    $(this).toggleClass('gnb-sub-button-focused');
   })
   $('.bt-cancel').click(function () {
     sony_site.slideUp();
@@ -59,7 +75,7 @@ window.onload = function () {
     }
   }
 
-  let search_bt = $('.gnb-sub__search');
+  let search_bt = $('.gnb-sub-search');
   let search_wrap = $('.search-wrap');
   let search_txt = $('#search-txt');
   let form_cancel = $('.form-cancel');
@@ -116,24 +132,7 @@ window.onload = function () {
     });
     $(this).mouseleave(function () {
       var timer = setTimeout(snsShowbox($(this), 'leave'), 100);
-      console.log(timer);
-      // snsShowbox($(this), 'leave');
     });
   });
 
-
-  // button go top setting
-  $(window).scroll(function () {
-    var scY = $(window).scrollTop();
-    if (scY >= 500) {
-      $('.button-go-top').addClass('--active');
-    } else {
-      $('.button-go-top').removeClass('--active');
-    }
-    if (scY >= 1700) {
-      $('.button-go-top-wrapper').addClass('--stop');
-    } else {
-      $('.button-go-top-wrapper').removeClass('--stop');
-    }
-  });
 }
